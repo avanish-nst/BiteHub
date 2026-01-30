@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Ubuntu;
+
+}
+
+
+.main {
+  display: flex;
+  height: 100vh;
+  flex-direction:row;
+}
+.banner {
+  flex: 1;
+  background: #FF9F1C;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bancon h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.bancon p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.form {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login {
+  width: 500px;
+  margin:10px;
+}
+
+.login h2 {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+.sub {
+  color: rgb(60, 60, 60);
+  margin-bottom: 25px;
+}
+
+.login input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid lightgray;
+  font-size: 14px;
+}
+
+
+.login button {
+  width: 100%;
+  padding: 12px;
+  background: #FF9F1C;
+  border: none;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.login button:hover {
+  background:#a67a23;
+}
+
+.aftertext {
+  font-size: 12px;
+  color: lightgrey;
+  margin-top: 15px;
+}
+
+.aftertext span {
+  color: #FFC857;
+  cursor: pointer;
+}
+@media (max-width:768px) {
+  .main{
+    flex-direction:column;
+  }
+}
+
+          

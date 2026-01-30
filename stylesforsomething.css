@@ -1,0 +1,409 @@
+*{
+    box-sizing:border-box;
+    margin:0px;
+    padding:0px;
+    font-family:Ubuntu;
+
+    
+}
+body {
+    background-color:rgb(0, 0, 0);
+    background-image:url("test (1).jpg");
+    background-size: 100vw;
+    font-family: Arial, sans-serif;
+}
+a:hover {
+  transform: scale(1.08);
+}
+.navbar {
+    position: sticky;
+
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 10px rgb(0, 0, 0);
+  z-index: 1;
+}
+
+.logo{
+  font-size: 22px;
+  font-weight: bold;
+  color:#FFC857;
+  text-decoration: none;
+
+}
+
+.navgrid{
+    padding-left:40px;
+    padding-right:40px;
+    display:grid;
+    width:100%;
+    grid-template-columns:1fr 1fr 2fr;    
+
+}
+.navflex{
+
+    display:flex;
+    flex-wrap:no-wrap;
+    /* justify-content:space-between; */
+     /* could use this after switching screen size... for desks top normal gap?? */
+    gap:50px;
+}
+.navflex a{
+    font-weight:bold;
+    font-size:15px;
+    text-decoration:none;
+    color:black;
+}
+
+#current{
+    border-bottom:2px solid black;
+}
+.mobnav{
+    display:flex;
+    width:100vw;
+    gap:10px;
+    justify-content:space-between;
+    background:white;
+    position:fixed;
+    bottom:0px;
+    padding-left:5vw;
+    padding-right:5vw;
+    display:none;
+    box-shadow:0 2px 10px black;
+    z-index:1;
+    
+}
+.mobnav img{
+    width:10vw;
+    padding:2px;
+}
+.mobbanner{
+    display:none;
+    height:80vh;
+    background-image:url('mobbanner.jpg');
+    background-size:cover;
+    text-align:right;
+    padding-top:50%;
+}
+.mobbanner p {
+    font-size:60px;
+    color:white;
+    font-weight:bold;
+}
+.dwnld img{
+    width:30%;
+}
+.win img{
+    width:10%;
+}
+
+
+
+.scrolling{
+    overflow:hidden;
+    display:flex;
+    width:100%;
+    /* height:200px; */
+    background-color:black;
+    gap:10px;
+    box-shadow: 0 2px 5px gray;
+    filter:brightness(70%);
+
+
+}
+
+.scrolers{
+    height:755px;
+    width:1000px;
+    background-color:black;
+    flex-shrink:0;
+    animation:name 50s linear infinite;
+    
+}
+.scrolers img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+@keyframes name{
+    0%{
+        transform:translateX(0);
+    }
+    100%{
+        transform:translateX(-404.4%);
+    }
+}
+
+
+@keyframes autoscroll {
+  0% {
+    transform: translateY(0); /* Start position */
+  }
+  100% {
+    /* Translate up by half the total height to scroll one set of items */
+    transform: translateY(-50%);
+  }
+}
+
+.banner{
+    position:absolute;
+    top:50%;
+    text-align:right;
+    font-size:50px;
+    color:white;
+    font-weight:bold;
+    background-color:rgba(0, 0, 0, 0.298);
+    width:100%;
+}
+
+
+
+
+.endthing{
+    background-color:black;
+    height:300px;
+    padding:30px;
+    position:relative;
+}
+.cprt{
+    color:white;
+    position:absolute;
+    bottom:5px;
+}
+h3{
+    color:white;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+.win img{
+    width:20%;
+}
+.cntctlnks{
+    position:absolute;
+    right:120px;
+    color:white;
+    top:40px;
+    font-size:30px;
+    text-align:center;
+    font-weight:bold;
+}
+.cntctlnks img{
+    width:40px;
+}
+.rot{
+    margin:auto;
+    height:50vw;
+    width:50vw;
+    /* background-color:red; */
+    font-size:3vw;
+    text-align:center;
+    position:relative;
+    background-color:rgb(0, 0, 0);
+    
+    border-radius:50%;
+    box-shadow:0px 0px 10px grey;
+    
+
+}
+.rot p{
+    position:relative;
+    top:45%;
+    font-family:sans-serif;
+    font-weight:bold;
+    color:white;
+
+} 
+.rot img{
+    width:9vw;
+    position:absolute;
+}
+
+.a{animation: revolve 10s linear infinite;}
+.b{animation: revolve2 10s linear infinite;}
+.c{animation: revolve3 10s linear infinite;}
+.d{animation: revolve4 10s linear infinite;}
+
+@keyframes revolve{
+    0%{left:42.5%;top:5%;}
+    12.5%{left:63.25%;top:23%;}
+    25%{left:80%;top:42.5%;}
+    37.5%{left:63.25%;top:63.75%}
+    50%{left:42.5%;top:80%;}
+    62.5%{left:21.75%;top:63.75%;}
+    75%{left:5%;top:42.5%;}
+    87.5%{left:21.75%;top:23%;}
+    100%{left:42.5%;top:5%;}
+}
+@keyframes revolve3{
+    0%{left:5%;top:42.5%;}
+    12.5%%{left:21.75%;top:23%;}
+    25%{left:42.5%;top:5%;}
+    37.5%{left:63.25%;top:23%;}
+    50%{left:80%;top:42.5%;}
+    62.5%{left:63.25%;top:63.75%}
+    75%{left:42.5%;top:80%;}
+    87.5%{left:21.75%;top:63.75%;}
+    100%{left:5%;top:42.5%;}
+}
+@keyframes revolve2{
+    0%{left:80%;top:42.5%;}
+    12.5%{left:63.25%;top:63.75%}
+    25%{left:42.5%;top:80%;}
+    37.5%{left:21.75%;top:63.75%;}
+    50%{left:5%;top:42.5%;}
+    62.5%{left:21.75%;top:23%;}
+    75%{left:42.5%;top:5%;}
+    87.5%{left:63.25%;top:23%;}
+    100%{left:80%;top:42.5%;}
+}
+@keyframes revolve4{
+    0%{left:42.5%;top:80%;}
+    12.5%{left:21.75%;top:63.75%;}
+    25%{left:5%;top:42.5%;}
+    37.5%{left:21.75%;top:23%;}
+    50%{left:42.5%;top:5%;}
+    62.5%{left:63.25%;top:23%;}
+    75%{left:80%;top:42.5%;}
+    87.5%{left:63.25%;top:63.75%}
+    100%{left:42.5%;top:80%;}
+}
+
+.prem{
+    background-color:black;
+  border-radius: 50% 50% 0 0;
+    height:400px;
+width:150vw;
+flex-shrink: 0;
+/* margin-bottom:300px; */
+text-align:center;
+padding:100px;
+}
+.premtext{
+    color:white;
+    font-size:xx-large;
+}
+.premtext1{
+    color:#FFC857;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.premtext a{
+    font-size:xxx-large;
+    color:#FFC857;
+}
+.premflex{
+    display:flex;
+    justify-content:center;
+    width:100%;
+    gap:100px;
+    margin-top:30px;
+}
+.prem img{
+    width:20%;
+}
+
+
+ @media (min-width:481px) and (max-width:768px){
+.navflex{
+    gap: 25px;
+}
+
+.navflex a{
+    font-size: 14px;
+  }
+
+  .navgrid{
+    padding: 0 20px;
+  }
+.scrolers{
+    height:500px;
+    width:900px;
+}
+.banner{
+    font-size:40px;
+    top:40%;
+}
+.cntctlnks{
+    display:none;
+}
+.premtext,.premtext1{
+    font-size:x-large;
+}
+.premtext a{
+    font-size:xx-large;
+}
+.premflex{
+    gap:70px;
+}
+.prem img{
+    width:30%;
+}
+.prem{
+    height:300px;
+    }
+}
+
+@media (max-width:480px){
+    .navbar{
+        background-color:#FFC857;
+    }
+    .logo{
+        color:white;
+        font-weight:bolder;
+    }
+    .navflex{
+        /* position:fixed;
+        bottom:0px;
+        width:100vw;
+        gap:10px; */
+        display:none;
+    }
+    /* .navitem{
+        flex:1;
+    } */
+    /* #current{
+        border:none;
+        
+    } */
+     .mobnav{
+        display:flex;
+     }
+     .navgrid{
+        display:flex;
+        justify-content:center;
+     }
+     .scrolling,.scrolers,.banner{
+        display:none;
+     }
+     .mobbanner{
+        display:block;
+        overflow:auto;
+     }
+     .cprt{
+        margin-bottom:45px;
+     }
+    .win img{
+        width:30%;
+    }
+    .cntctlnks{
+        display:none;
+    }
+    .premtext,.premtext1{
+        font-size:x-large;
+    }
+    .premtext a{
+        font-size:xx-large;
+    }
+    .premflex{
+    gap:70px;
+}
+    .prem img{
+        width:38%;
+    }
+    .prem{
+    height:300px;
+    }
+}
